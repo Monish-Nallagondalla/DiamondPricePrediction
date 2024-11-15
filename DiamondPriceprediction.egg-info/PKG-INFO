@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DiamondPriceprediction
+Version: 0.0.1
+Author: Monish
+Author-email: nsmonish@gmail.com
+Requires-Dist: Pandas
+Requires-Dist: numpy
+Requires-Dist: flask
