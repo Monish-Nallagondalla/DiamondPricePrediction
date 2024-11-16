@@ -1,6 +1,9 @@
 Pandas 
 numpy
 flask
+seaborn
+matplotlib 
+
 
 
 -e .
