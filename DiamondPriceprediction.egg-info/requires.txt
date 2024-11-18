@@ -1,3 +1,6 @@
 Pandas
 numpy
 flask
+seaborn
+matplotlib
+scikit-learn

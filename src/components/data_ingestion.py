@@ -27,10 +27,10 @@ class DataIngestion:
         logging.info('Data Ingestion method starts')
 
         try:
-            df = pd.read_csv(os.path.join('notebook/data','gemstone.csv'))
+            df = pd.read_csv(os.path.join('notebooks/data','gemstone.csv'))
             logging.info('Dataset read as pandas Dataframe')
 
-            os.makedirs(os.path.join(self.ingestion_config.raw_data_path),exist_ok=True)
+            os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path),exist_ok=True)
             df.to_csv(self.ingestion_config.raw_data_path,index=False)
             logging.info('Raw data is created')
 
