@@ -30,7 +30,7 @@ class DataTransformation:
             logging.info('Data Transformation Initiated')
 
             #  categorical and numerical variables 
-            categorical_cols = ['cuts','color','clarity']
+            categorical_cols = ['cut','color','clarity']
             numerical_cols = ['carat','depth','table','x','y','z']
 
             # define the custom ranking for each ordinal Variable 
@@ -53,7 +53,7 @@ class DataTransformation:
                 steps=[
                     ('imputer',SimpleImputer(strategy='most_frequent')),
                     ('ordinalencode',OrdinalEncoder(categories=[cut_categories,color_categories,clarity_categories])),
-                    ('scaler',StandardScaler)
+                    ('scaler',StandardScaler())
                 ]
             )
 
@@ -108,8 +108,16 @@ class DataTransformation:
             test_arr = np.c_[input_feature_test_arr,np.array(target_feature_test_df)]
 
             save_object(
+                    file_path=self.data_transformation_config.preprocessor_obj_file_path,
+                    obj = preprocessing_obj
+            )
+            return (
+                train_arr,
+                test_arr,
+                self.data_transformation_config.preprocessor_obj_file_path
 
             )
+            logging.info ('Applying preprocessing object on training and testing datasets.')
 
 
         except Exception as e:
