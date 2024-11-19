@@ -34,7 +34,9 @@ class ModelTrainer:
                 'Lasso':Lasso(),
                 'Ridge':Ridge(),
                 'Elasticnet':ElasticNet(),
-                'DecisionTree':
+                'DecisionTree': DecisionTreeRegressor(),
+                'RandomForest' : RandomForestRegressor(),
+                
 
 
             }
