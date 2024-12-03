@@ -19,5 +19,13 @@ def predict_datapoint():
 
     else:
         data = CustomData(
-            
+            carat = float(request.form.get('carat')),
+            depth= float(request.form.get('depth')),
+            table = float(request.form.get('table')),
+            x = float(request.form.get('x')),
+            y = float(request.form.get('y')),
+            z = float(request.form.get('z')),
+            cut = request.form.get('cut'),
+            color= request.form.get('color'),
+            clarity = request.form.get('clarity')
         )
