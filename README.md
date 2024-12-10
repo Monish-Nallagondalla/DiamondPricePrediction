@@ -1,6 +1,4 @@
-Sure! Here’s a structured and informative `README.md` file for your diamond price prediction project. This document will provide an overview of the project, its structure, and how to run it.
-
-```markdown
+text
 # Diamond Price Prediction
 
 ## Overview
@@ -16,42 +14,41 @@ This is an end-to-end project for predicting diamond prices based on various att
 - [License](#license)
 
 ## Project Structure
-```
-.
-├── artifacts/                  # Contains generated files
-│   ├── preprocessor.pkl
-│   ├── raw.csv
-│   ├── test.csv
-│   └── train.csv
-├── dist/                       # Distribution package
-│   └── DiamondPricePrediction-0.0.1-py3.8.egg
-├── notebooks/                  # Jupyter notebooks for analysis and model training
-│   ├── data/                   # Folder with raw data
-│   ├── EDA.ipynb               # Exploratory Data Analysis notebook
-│   └── Model Training.ipynb    # Model training notebook
-├── src/                        # Source code for the application
-│   ├── components/             # Component files for data processing and model training
-│   │   ├── __init__.py
-│   │   ├── data_ingestion.py
-│   │   ├── data_transformation.py
-│   │   └── model_trainer.py
-│   ├── pipelines/              # Pipelines for prediction and training
-│   │   ├── __init__.py
-│   │   ├── prediction_pipeline.py
-│   │   └── training_pipeline.py
-│   ├── exception.py            # Custom exceptions for error handling
-│   ├── logger.py               # Logging utility for tracking events in the application
-│   └── utils.py                # Utility functions for various tasks
-├── templates/                  # HTML templates for the web app
-│   ├── form.html               # Input form for predictions
-│   └── index.html              # Main page of the web app
-├── application.py              # Main application script to run the project
-├── .gitignore                  # Files and directories to ignore in Git
-├── LICENSE                     # Licensing information
-├── README.md                   # Documentation file (this file)
-├── requirements.txt            # Required Python dependencies
-└── setup.py                    # Setup configuration for the package
-```
+
+artifacts/ # Contains generated files
+├── preprocessor.pkl
+├── raw.csv
+├── test.csv
+└── train.csv
+dist/ # Distribution package
+└── DiamondPricePrediction-0.0.1-py3.8.egg
+notebooks/ # Jupyter notebooks for analysis and model training
+├── data/ # Folder with raw data
+├── EDA.ipynb # Exploratory Data Analysis notebook
+└── Model Training.ipynb # Model training notebook
+src/ # Source code for the application
+├── components/ # Component files for data processing and model training
+│ ├── init.py
+│ ├── data_ingestion.py
+│ ├── data_transformation.py
+│ └── model_trainer.py
+├── pipelines/ # Pipelines for prediction and training
+│ ├── init.py
+│ ├── prediction_pipeline.py
+│ └── training_pipeline.py
+├── exception.py # Custom exceptions for error handling
+├── logger.py # Logging utility for tracking events in the application
+└── utils.py # Utility functions for various tasks
+templates/ # HTML templates for the web app
+├── form.html # Input form for predictions
+└── index.html # Main page of the web app
+application.py # Main application script to run the project
+.gitignore # Files and directories to ignore in Git
+LICENSE # Licensing information
+README.md # Documentation file (this file)
+requirements.txt # Required Python dependencies
+setup.py # Setup configuration for the package
+text
 
 ## Technologies Used
 - **Python**: The primary programming language used in this project.
@@ -119,16 +116,8 @@ To run the application, execute the following command:
 
 ```bash
 python application.py
-```
 
-Once running, open your web browser and navigate to `http://127.0.0.1:5000` to access the application.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize any sections or add additional information as necessary!
-```
-
+Once running, open your web browser and navigate to http://127.0.0.1:5000 to access the application.
+License
+This project is licensed under the MIT License - see the LICENSE file for details. Feel free to customize any sections or add additional information as necessary!
+text
