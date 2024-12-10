@@ -1,4 +1,4 @@
-## Machihne learning project 
+## Machine learning project 
 Here's the `README.md` content formatted for direct copy-paste:
 
 ```markdown
